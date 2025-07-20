@@ -1,107 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edward Kwarteng Owusu - Personal Portfolio</title>
+    
 </head>
-<body>
-    <header>
-        <title>Edward Kwarteng Owusu - Personal Portfolio</title>
-        
-            <h1>Edward Kwarteng Owusu</h1>
-            <p>FrontEnd Developer | Innovator | Problem Solver</p>
-        
+<body class="flex flex-col min-h-screen">
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-blue-600 to-purple-700 text-white p-6 shadow-lg rounded-b-lg">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-2">Edward Kwarteng Owusu</h1>
+            <p class="text-lg md:text-xl font-light">Full-Stack Developer | Innovator | Problem Solver</p>
+        </div>
     </header>
 
-    <nav>
-        <div>
-            <ul>
-                <li><a href="#Introduction">Introduction</a></li>
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Contact">Contact</a></li>
-
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-800 text-white p-4 sticky top-0 z-10 shadow-md">
+        <div class="container mx-auto">
+            <ul class="flex flex-col md:flex-row justify-center space-y-2 md:space-y-0 md:space-x-8">
+                <li><a href="#introduction" class="hover:text-blue-300 transition-colors duration-300 text-lg font-medium rounded-md px-3 py-2">Introduction</a></li>
+                <li><a href="#projects" class="hover:text-blue-300 transition-colors duration-300 text-lg font-medium rounded-md px-3 py-2">Projects</a></li>
+                <li><a href="#about" class="hover:text-blue-300 transition-colors duration-300 text-lg font-medium rounded-md px-3 py-2">About Me</a></li>
+                <li><a href="#contact" class="hover:text-blue-300 transition-colors duration-300 text-lg font-medium rounded-md px-3 py-2">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <main>
-        <section id="introduction" class=>
-            <h2>Introduction</h2>
-            <p>Hello! I am Edward Kwarteng Owusu, a passionate FrontEnd Developer with a knack for building 
+    <!-- Main Content Area -->
+    <main class="flex-grow container mx-auto p-6 md:p-8">
+
+        <!-- Introduction Section -->
+        <section id="introduction" class="bg-white p-8 rounded-lg shadow-md mb-10">
+            <h2 class="text-3xl font-semibold text-gray-900 mb-4 border-b-2 border-blue-500 pb-2">Introduction</h2>
+            <p class="text-lg leading-relaxed text-gray-700">
+                Hello! I'm Edward Kwarteng Owusu, a passionate Full-Stack Developer with a knack for building robust and scalable web applications. I thrive on solving complex problems and am constantly exploring new technologies to deliver efficient and user-friendly solutions. My journey in tech is driven by curiosity and a desire to create impactful digital experiences.
+            </p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="bg-white p-8 rounded-lg shadow-md mb-10">
+            <h2 class="text-3xl font-semibold text-gray-900 mb-6 border-b-2 border-blue-500 pb-2">Projects</h2>
+
+            <!-- Project 1 -->
+            <article class="project bg-gray-100 p-6 rounded-lg shadow-sm mb-6 border border-gray-200">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">Yamoransa Model Lab 8 Project 2024</h3>
+                <p class="text-gray-700 mb-4">
+                    Hello! I am Edward Kwarteng Owusu, a passionate FrontEnd Developer with a knack for building 
                 robust and scalable web applications. I thrive on solving complex problems and constantly exploring 
-            new technologies to deliver efficent and user-friendly applications.</p>
-
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <article>
-                <h3>Yamoransa Model Lab 8 Project 2024</h3>
-                <p>I led the Yamoransa Model Lab 8, Bogoso team as the Lead Centre Manager in the AIRTAD 2025 Robotics 
-                    competition. We won the most innovative project 
-                </p>
-                <a href="//web.facebook.com/share/p/16fRRDGKPH/"  target="_blank" >View Project</a>
+            new technologies to deliver efficent and user-friendly applications. </p>
+                <a href="https://web.facebook.com/share/p/16fRRDGKPH/" target="_blank" class="inline-block bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 transition-colors duration-300 shadow-md">View Project</a>
             </article>
 
-            <article>
-                <h3>
-                    Yamoransa Model Lab 8 Project 2025</h3>
-                <p>I led the Yamoransa Model Lab 8, Bogoso team as the Lead Centre Manager in the AIRTAD 2025 Robotics 
-                    competition. We won the most innovative project 
+            <!-- Project 2 -->
+            <article class="project bg-gray-100 p-6 rounded-lg shadow-sm mb-6 border border-gray-200">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">Yamoransa Model Lab 8 Project 2025</h3>
+                <p class="text-gray-700 mb-4">
+                    Developed and integrated an Smart modern technological city comprising of a water management system, fire station, 
+                    waste management system, a step powered school and an automated home.
                 </p>
-                <a href="//web.facebook.com/share/p/16fRRDGKPH/"  target="_blank" >View Project 2</a>
-                </h3>
+                <a href="//web.facebook.com/share/p/16fRRDGKPH/" target="_blank" class="inline-block bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 transition-colors duration-300 shadow-md">View Project</a>
             </article>
 
-            <article>
-            <h3>PERSONAL BLOG</h3>
-                <p>Built a personal website to showcase all projects i have embarked on.</p>
-                <a href="//www.yamoransamodel.com"  target="_blank" >View Project 3</a>
-           </article>
+            <!-- Project 3 -->
+            <article class="project bg-gray-100 p-6 rounded-lg shadow-sm mb-6 border border-gray-200">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">Personal Blog & CMS</h3>
+                <p class="text-gray-700 mb-4">
+                    Built a personal blog platform from scratch, including a custom content management system (CMS) for easy post creation and management. Features include markdown support and dynamic routing.
+                </p>
+                <a href="//www.yamoransamodel.com" target="_blank" class="inline-block bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 transition-colors duration-300 shadow-md">View Project</a>
+            </article>
         </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                 With 2 years of experience in web development, I specialize in JavaScript (React, Node.js), and database technologies. I'm passionate about clean code, robust architectures, and continuous learning.
-          </p>
-                 <h3>Skills</h3>
-          <ul>
-            <li>Languages: JavaScript, HTML, CSS</li>
-            <li>Frameworks/Libraries: React, Node.js</li>
-
-          </ul>
-
-          <ul>
-             <li>Hiking and exploring nature trails</li>
+        <!-- About Me Section -->
+        <section id="about" class="bg-white p-8 rounded-lg shadow-md mb-10">
+            <h2 class="text-3xl font-semibold text-gray-900 mb-4 border-b-2 border-blue-500 pb-2">About Me</h2>
+            <p class="text-lg leading-relaxed text-gray-700 mb-4">
+                With 5 years of experience in web development, I specialize in JavaScript (React, Node.js), Python (Django, Flask), and modern database technologies. I'm passionate about clean code, robust architectures, and continuous learning.
+            </p>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-2">Skills:</h3>
+            <ul class="list-disc list-inside text-gray-700 mb-4 pl-4">
+                <li>**Languages:** JavaScript (ES6+), Python, HTML5, CSS3, SQL</li>
+                <li>**Frameworks/Libraries:** React, Node.js, Express.js, Django, Flask, Tailwind CSS, Bootstrap</li>
+                <li>**Databases:** PostgreSQL, MongoDB, MySQL</li>
+                <li>**Tools & Platforms:** Git, Docker, AWS (EC2, S3), Heroku, VS Code</li>
+            </ul>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-2">Hobbies:</h3>
+            <ul class="list-disc list-inside text-gray-700 pl-4">
+                <li>Hiking and exploring nature trails</li>
                 <li>Photography (especially landscape and street photography)</li>
                 <li>Playing acoustic guitar</li>
                 <li>Reading sci-fi and fantasy novels</li>
-          </ul>
-            
+            </ul>
         </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p >
+        <!-- Contact Section -->
+        <section id="contact" class="bg-white p-8 rounded-lg shadow-md mb-10">
+            <h2 class="text-3xl font-semibold text-gray-900 mb-4 border-b-2 border-blue-500 pb-2">Contact</h2>
+            <p class="text-lg leading-relaxed text-gray-700 mb-6">
                 I'm always open to new opportunities and collaborations. Feel free to reach out!
             </p>
-
-            <div>
-                <a href="mailto: eddykwart4u2@gmail.com">Email Me</a>
-                <a href="https://linkedin.com/in/eddykwart" target="_blank">LinkedIn</a>
-                <a href="https://github.com/eddykwartofficial" target="_blank">GitHub</a>
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8">
+                <a href="mailto:eddykwart4u2@gmail.com" class="bg-green-500 text-white px-8 py-3 rounded-full hover:bg-green-600 transition-colors duration-300 shadow-lg text-lg font-semibold">Email Me</a>
+                <a href="https://linkedin.com/in/eddykwart" target="_blank" class="bg-blue-700 text-white px-8 py-3 rounded-full hover:bg-blue-800 transition-colors duration-300 shadow-lg text-lg font-semibold">LinkedIn</a>
+                <a href="https://github.com/eddykwartofficial" target="_blank" class="bg-gray-700 text-white px-8 py-3 rounded-full hover:bg-gray-900 transition-colors duration-300 shadow-lg text-lg font-semibold">GitHub</a>
             </div>
         </section>
+
     </main>
 
-    <footer class="clearfix">
-  
-    <p>&copy; 2024 Edward Kwarteng Owusu. All rights reserved <a href="https://www.yamoransamodel.com" target="_blank">here</a></p>
- 
-</footer>
-    
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white p-6 text-center mt-auto shadow-inner rounded-t-lg">
+        <p class="text-sm">&copy; 2024 Edward Kwarteng Owusu. All rights reserved.</p>
+    </footer>
 </body>
 </html>
